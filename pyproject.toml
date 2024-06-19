@@ -1,0 +1,27 @@
+[project]
+name = "synth-sound"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "XEas", email = "mokeevgleb5@gmail.com"},
+]
+dependencies = [
+    "ipykernel>=6.29.4",
+    "pydub>=0.25.1",
+    "scipy>=1.13.1",
+    "numpy==1.26.4",
+    "librosa>=0.10.2.post1",
+    "stempeg>=0.2.3",
+    "setuptools>=70.0.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
